@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context="com.example.nived.e_governance.ManagerRegistration">
+
+    <TextView
+        android:id="@+id/Registation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:text="Registration" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_action_manager"
+        android:inputType="textPersonName"
+        android:hint="Manager Name"
+        android:layout_marginTop="67dp"
+        android:layout_below="@+id/Registation"
+        android:layout_alignLeft="@+id/user_name"
+        android:layout_alignStart="@+id/user_name" />
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Username"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/user_name"
+        android:layout_alignRight="@+id/user_name"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:layout_below="@+id/user_name"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/confirm_password"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/password"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_login"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="#fff"
+        android:text="Register"
+        android:layout_below="@+id/confirm_password"
+        android:layout_alignLeft="@+id/confirm_password"
+        android:layout_alignStart="@+id/confirm_password"
+        android:layout_marginTop="44dp" />
+
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_login"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Exit"
+        android:textColor="#fff"
+        android:layout_alignBaseline="@+id/register"
+        android:layout_alignBottom="@+id/register"
+        android:layout_alignRight="@+id/confirm_password"
+        android:layout_alignEnd="@+id/confirm_password" />
+
+</RelativeLayout>

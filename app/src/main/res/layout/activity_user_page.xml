@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient"
+    android:layout_height="match_parent"
+    tools:context="com.example.nived.e_governance.UserPage">
+
+    <Button
+        android:id="@+id/voter_id"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:background="@drawable/background_login"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Voter Id" />
+
+    <Button
+        android:id="@+id/birth_certificate"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/colorAccent"
+        android:background="@drawable/background_login"
+        android:layout_marginTop="35dp"
+        android:text="Birth Certificate"
+        android:layout_below="@+id/voter_id"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/water_connection"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:background="@drawable/background_login"
+        android:layout_marginTop="35dp"
+        android:text="Water Connection"
+        android:layout_below="@+id/birth_certificate"
+        android:layout_alignLeft="@+id/birth_certificate"
+        android:layout_alignStart="@+id/birth_certificate" />
+
+    <Button
+        android:id="@+id/telephone_connection"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:background="@drawable/background_login"
+        android:layout_marginTop="35dp"
+        android:text="Telephone Connection"
+        android:layout_below="@+id/water_connection"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/electricity_connection"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:background="@drawable/background_login"
+        android:layout_below="@+id/telephone_connection"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="Electricity Connection" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@drawable/background_login"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Logout"
+        android:layout_below="@+id/electricity_connection"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp" />
+
+</RelativeLayout>

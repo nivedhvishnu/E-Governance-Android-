@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context="com.example.nived.e_governance.HomePage">
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/background_login"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Login"
+        android:layout_marginTop="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/user_registration_button"
+        android:layout_alignStart="@+id/user_registration_button" />
+
+    <Button
+        android:id="@+id/user_registration_button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/background_login"
+        android:backgroundTint="@color/colorAccent"
+        android:text="User Registration"
+        android:layout_marginTop="75dp"
+        android:layout_below="@+id/login_button"
+        android:layout_alignLeft="@+id/manager_registration_button"
+        android:layout_alignStart="@+id/manager_registration_button" />
+
+    <Button
+        android:id="@+id/manager_registration_button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/background_login"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_marginTop="75dp"
+        android:text="Manager Registration"
+        android:layout_below="@+id/user_registration_button"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
+

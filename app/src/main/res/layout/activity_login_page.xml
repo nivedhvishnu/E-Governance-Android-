@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context="com.example.nived.e_governance.LoginPage">
+
+    <TextView
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:textColor="#fff"
+        android:layout_marginTop="60dp"
+        android:text="Login Page"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Login"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="User Name" />
+
+    <EditText
+        android:id="@+id/password_feild"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/user_name"
+        android:layout_alignLeft="@+id/user_name"
+        android:layout_alignStart="@+id/user_name"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/signin_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:text="Login"
+        android:background="@drawable/background_login"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_below="@+id/password_feild"
+        android:layout_alignLeft="@+id/password_feild"
+        android:layout_alignStart="@+id/password_feild" />
+
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:background="@drawable/background_login"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_alignBaseline="@+id/signin_button"
+        android:layout_alignBottom="@+id/signin_button"
+        android:layout_alignRight="@+id/password_feild"
+        android:layout_alignEnd="@+id/password_feild" />
+</RelativeLayout>
